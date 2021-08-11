@@ -1,0 +1,28 @@
+{
+  "name": "@wcfb/root",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Web Components with Firebase Back ends - monorepo including several web components with Firebase back ends, and Rocket/11ty MPA to test them within.",
+  "main": "index.js",
+  "scripts": {
+    "promote": "rollup -c && cp docs/cwbAuth* ../cwb-mpa-test-site/docs/",
+    "build": "rollup -c && node server.js",
+    "start": "node server.js",
+    "yada": "rollup -c ./packages/auth/rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petecarapetyan/wcfb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petecarapetyan/wcfb/issues"
+  },
+  "homepage": "https://github.com/petecarapetyan/wcfb#readme",
+  "workspaces": [
+    "packages/base",
+    "packages/auth"
+  ]
+}
