@@ -1,0 +1,42 @@
+{% extends 'layout-default.njk' %}
+
+{% block themeBody %}
+
+  <div class="ga-head-l"></div>
+    <header id="main-header" class="header-grid-area">
+      {% block header %}
+        {% include 'partials/header.njk' %}
+      {% endblock header%}
+    </header>
+  <div class="ga-head-r"></div>
+  
+  <div class="ga-head2-main">
+    <div class="banner rocket-content">
+      <p>[ad banner goes here]</p>
+    </div>
+  </div>
+
+  <div class="ga-content-l"></div>
+  <div class="ga-head3-main">
+      <h2>Today's Featured Products:</h2></div>
+  <div class="ga-content-r"></div>
+
+  <div class="content-grid-area">
+    {% block content %}
+      {% include 'partials/_layoutHome/content.njk' %}
+    {% endblock content %}
+  </div>
+  <div class="sidebar-grid-area">
+    {% block sidebar %}
+      {% include 'partials/_layoutHome/sidebar.njk' %}
+    {% endblock sidebar %}
+  </div>
+
+  <div class="ga-foot-main">
+    {% block footer %}
+      {% include 'partials/footer.njk' %}
+    {% endblock footer %}
+  </div>
+
+  {% include 'partials/bottom.njk' %}
+{% endblock themeBody %}

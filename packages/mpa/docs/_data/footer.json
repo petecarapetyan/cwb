@@ -1,0 +1,97 @@
+[
+  {
+    "name": "Theme Examples",
+    "children": [
+      {
+        "text": "not-npr",
+        "href": "https://appwriter.com/"
+      },
+      {
+        "text": "not-ibm",
+        "href": "https://walktown.net/"
+      },
+      {
+        "text": "not-slashdot",
+        "href": "https://mymodeler.com/"
+      },
+      {
+        "text": "not-optimize",
+        "href": "https://couldbe.net/"
+      },
+      {
+        "text": "not-fuelcell",
+        "href": "https://betterology.net/"
+      },
+      {
+        "text": "not-wikipedia",
+        "href": "https://jeren-5de92.web.app/"
+      },
+      {
+        "text": "not-apnews",
+        "href": "https://esuyp-fb794.web.app/"
+      },
+      {
+        "text": "not-wired",
+        "href": "https://replitza.web.app/"
+      },
+      {
+        "text": "not-nyt",
+        "href": "https://jukelox-7ec89.web.app/"
+      },
+      {
+        "text": "not-next",
+        "href": "https://mulerain.web.app/"
+      },
+      {
+        "text": "not-github",
+        "href": "https://mtobwin.web.app/"
+      }
+    ]
+  },
+  {
+    "name": "Actual Substance?",
+    "children": [
+      {
+        "text": "Rocket, an SSG",
+        "href": "https://rocket.modern-web.dev/"
+      },
+      {
+        "text": "WebAppWriter.com",
+        "href": "https://webappwriter.com/"
+      },
+      {
+        "text": "dataFundamentals.com",
+        "href": "https://datafundamentals.com/"
+      },
+      {
+        "text": "Betterology Corp",
+        "href": "https://betterology.com/"
+      },
+      {
+        "text": "More Fins (Rocket Themes)",
+        "href": "https://github.com/petecarapetyan/fins-rocket-themes#readme"
+      },
+      {
+        "text": "What is an SSG?",
+        "href": "https://en.wikipedia.org/wiki/Web_template_system#Static_site_generators"
+      },
+      {
+        "text": "What is JAMStack?",
+        "href": "https://jamstack.org/"
+      },
+      {
+        "text": "11ty",
+        "href": "https://www.11ty.dev/"
+      }
+    ]
+  },
+  {
+    "name": "Personal",
+    "children": [
+      {
+        "text": "Aspie Automator",
+        "href": "https://aspieautomator.com/"
+      }
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "name":  "@wcfb/buy",
+  "version": "0.1.0",
+  "description": "sometimes you need to rollup a web component",
+  "main": "index.js",
+  "scripts": {
+    "promote": "rollup -c && cp docs/cwfbBuy* ../mpa/docs/",
+    "build": "rollup -c",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Web Component"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-alias": "^3.1.1",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "@rollup/plugin-replace": "^2.3.3",
+    "@rollup/plugin-typescript": "^5.0.2",
+    "browser-sync": "^2.26.12",
+    "compression": "^1.7.4",
+    "connect-history-api-fallback": "^1.6.0",
+    "connect-logger": "0.0.1",
+    "esbuild": "^0.6.8",
+    "rollup": "^2.23.0",
+    "ts-node": "^8.10.2",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "lit": "^2.0.0-rc.1"
+  }
+}

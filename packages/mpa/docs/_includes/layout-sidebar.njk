@@ -1,0 +1,42 @@
+{% extends 'layout-default.njk' %}
+
+{% block themeBody %}
+
+  <div class="ga-head-l"></div>
+    <header id="main-header" class="header-grid-area">
+      {% block header %}
+        {% include 'partials/header.njk' %}
+      {% endblock header%}
+    </header>
+  <div class="ga-head-r"></div>
+
+    <div class="content-grid-area">
+      {% block content %}
+        {% include 'partials/_layoutSidebar/content.njk' %}
+      {% endblock content %}
+      {% if productId %} 
+        <div class="cwbButton">
+          <script src="/cwfbBuy.js" async type="module"></script>
+          <p>Add to shopping cart <button-page></button-page></p>
+        </div>
+      {% endif %}
+      {% if productId %} 
+        <h3 class="page-slogan">Product Name: {{productName}}</h3>
+        <p>Product Id: {{productId}}</p>
+        <p>Price: {{productPrice}}</p>
+      {% endif %}
+    </div>
+    <div class="sidebar-grid-area">
+      {% block sidebar %}
+        {% include 'partials/_layoutSidebar/sidebar.njk' %}
+      {% endblock sidebar %}
+    </div>
+  
+    <div class="ga-foot-main">
+      {% block footer %}
+        {% include 'partials/footer.njk' %}
+      {% endblock footer %}
+    </div>
+
+    {% include 'partials/bottom.njk' %}
+{% endblock themeBody %}

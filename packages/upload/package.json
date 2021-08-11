@@ -1,0 +1,39 @@
+{
+  "name":  "@wcfb/upload",
+  "version": "0.1.0",
+  "description": "firebase rdx app shell base element",
+  "main": "index.js",
+  "scripts": {
+    "promote": "rollup -c && cp docs/cwfbUpload* ../mpa/docs/",
+    "build": "rollup -c && node server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "rdx",
+    "redux",
+    "state",
+    "PWA",
+    "Web Component"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-alias": "^3.1.1",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "@rollup/plugin-replace": "^2.3.3",
+    "@rollup/plugin-typescript": "^5.0.2",
+    "browser-sync": "^2.26.12",
+    "compression": "^1.7.4",
+    "connect-history-api-fallback": "^1.6.0",
+    "connect-logger": "0.0.1",
+    "esbuild": "^0.6.8",
+    "rollup": "^2.23.0",
+    "ts-node": "^8.10.2",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "@captaincodeman/rdx": "^1.0.0-rc.9",
+    "firebase": "^7.24.0",
+    "lit": "^2.0.0-rc.2",
+    "reselect": "^4.0.0"
+  }
+}

@@ -1,0 +1,16 @@
+<!doctype html>
+{% block htmlTag %}
+<html lang="{{ site.lang }}" dir="{{ site.dir }}">
+{% endblock htmlTag %}
+
+  {% block head %}
+    {% include 'partials/head.njk' %}
+  {% endblock head %}
+
+  {% block bodyTag %}
+    <body layout="{{ layout }}">
+  {% endblock bodyTag %}
+    {% block themeBody %}
+    {% endblock themeBody%}
+  </body>
+</html>

@@ -1,0 +1,7 @@
+.firebase/
+node_modules/
+docs/index.js.map
+docs/index.js
+package-lock.json
+docs/*.js.map
+docs/*.js
