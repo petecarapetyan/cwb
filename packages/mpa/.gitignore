@@ -4,7 +4,6 @@ docs/_merged_assets/
 docs/_merged_includes/
 docs/*.js.map
 docs/*.js
-docs/_assets/cwb*
 _site/
 _site-dev
 

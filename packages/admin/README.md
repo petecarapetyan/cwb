@@ -1,6 +1,6 @@
-# cwb-admin
+# @wcfb/admin
 
-Aug 2, 2021
+Aug 11, 2021
 
 ## Admin
 

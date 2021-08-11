@@ -21,3 +21,11 @@ In some apps, a back end connection is only needed on a very few pages. My use c
 - 1 page security admin
 
 In the above configuration, only the single pages need a back end connection. So each of these is a separate Web Component with a Firebase Back end connection.
+
+## Monorepo started, not working
+
+- This monorepo started as separate repos for each component
+- An effort was made (this repo) to put it into monorepo form
+- I ran out of gas before I got all the rollup stuff working properly
+
+So, for the moment, it's really a bunch of separate projects organized improperly under "packages"

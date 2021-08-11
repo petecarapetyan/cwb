@@ -3,31 +3,31 @@ module.exports = function () {
     dir: 'ltr',
     lang: 'en',
     name: 'FauxMazon',
-    description: 'FauxMazon is a test of cwb - Web Components with Back End Connections',
+    description: 'FauxMazon is a test of wcfb - Web Components with Back End Connections',
     socialLinks: [
       {
         name: 'auth',
-        url: '/cwb/auth/',
+        url: '/wcfb/auth/',
       },
       {
         name: 'cart',
-        url: '/cwb/cart/',
+        url: '/wcfb/cart/',
       },
       {
         name: 'upload',
-        url: '/cwb/upload/',
+        url: '/wcfb/upload/',
       },
       {
         name: 'media',
-        url: '/cwb/media/',
+        url: '/wcfb/media/',
       },
       {
         name: 'admin',
-        url: '/cwb/admin/',
+        url: '/wcfb/admin/',
       },
       {
         name: 'GitHub',
-        url: 'https://github.com/petecarapetyan/cwb-mpa-test-site',
+        url: 'https://github.com/petecarapetyan/wcfb-mpa-test-site',
       },
     ],
     gitSiteUrl: 'https://github.com/petecarapetyan/fins-rocket-themes',

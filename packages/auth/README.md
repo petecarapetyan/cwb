@@ -1,6 +1,6 @@
-# cwb-auth
+# @wcfb/auth
 
-Aug 2, 2021
+Aug 11, 2021
 
 ## Auth
 
@@ -43,8 +43,8 @@ Doesn't this seem a bit excessive? Here's why it is helpful, or even required.
 
 So, to secure all of these systems we must maintain the same data in 3 different systems instead of 1 or 2
 
-Firebase functions (see [this](https://github.com/petecarapetyan/cwb-functions/blob/main/functions/src/roles.ts)) does the back end work of keeping Firestore and the JWT in sync. Technically, this is unrelated to this web component.
+Firebase functions (see [this](https://github)) does the back end work of keeping Firestore and the JWT in sync. Technically, this is unrelated to this web component.
 
 ## Notes about documentation
 
-See https://github.com/petecarapetyan/cwb-mpa-test-site/blob/main/README.md
+See https://github

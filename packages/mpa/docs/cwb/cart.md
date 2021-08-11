@@ -3,5 +3,5 @@
 <app-shell></app-shell>
 
 ```js script
-import '/cwbCart.js';
+import '/wcfbCart.js';
 ```

@@ -5,7 +5,7 @@
   "description": "Web Components with Firebase Back ends - monorepo including several web components with Firebase back ends, and Rocket/11ty MPA to test them within.",
   "main": "index.js",
   "scripts": {
-    "promote": "rollup -c && cp docs/cwfbAuth* ../mpa/docs/",
+    "promote": "rollup -c && cp docs/wcfbAuth* ../mpa/docs/",
     "build": "rollup -c && node server.js",
     "start": "node server.js",
     "yada": "rollup -c ./packages/auth/rollup.config.js"

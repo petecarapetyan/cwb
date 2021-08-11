@@ -1,6 +1,6 @@
-# cwb-functions
+# @wcfb-functions
 
-Aug 2, 2021
+Aug 11, 2021
 
 ## Functions
 
@@ -10,4 +10,4 @@ Aug 2, 2021
 
 ## Notes about documentation
 
-See https://github.com/petecarapetyan/cwb-mpa-test-site/blob/main/README.md
+See https://github

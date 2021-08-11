@@ -4,7 +4,7 @@
   "description": "sometimes you need to rollup a web component",
   "main": "index.js",
   "scripts": {
-    "promote": "rollup -c && cp docs/cwfbBuy* ../mpa/docs/",
+    "promote": "rollup -c && cp docs/wcfbBuy* ../mpa/docs/",
     "build": "rollup -c",
     "start": "node server.js"
   },

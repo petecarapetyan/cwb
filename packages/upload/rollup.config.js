@@ -10,7 +10,7 @@ const targetDir = process.env.STORE_DIR && process.env.STORE_DIR.length>0 ? proc
 export default [{
   input: 'src/index.ts',
   output: {
-    file: targetDir +'/cwfbUpload.js',
+    file: targetDir +'/wcfbUpload.js',
     format: 'esm',
     sourcemap: true,
   },

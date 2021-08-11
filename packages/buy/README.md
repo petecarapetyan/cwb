@@ -1,11 +1,11 @@
-# cwb-button-localstorage
+# @wcfb/buy
 
-Aug 2, 2021
+Aug 11, 2021
 
-## Button Localstorage
+## Buy Button
 
 Web Component provides capability for "Add to Cart" feature on a product page, which in turn adds to localstorage.
 
 ## Notes about documentation
 
-See https://github.com/petecarapetyan/cwb-mpa-test-site/blob/main/README.md
+See https://github

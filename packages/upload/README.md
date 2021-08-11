@@ -1,4 +1,4 @@
-# cwb-upload
+# @wcfb/upload
 
 Aug 2, 2021
 
@@ -8,4 +8,4 @@ Web component - Allows you to upload media to firebase storage
 
 ## Notes about documentation
 
-See https://github.com/petecarapetyan/cwb-mpa-test-site/blob/main/README.md
+See https://github
