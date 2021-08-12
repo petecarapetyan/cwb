@@ -27,7 +27,7 @@ module.exports = function () {
       },
       {
         name: 'GitHub',
-        url: 'https://github.com/petecarapetyan/wcfb-mpa-test-site',
+        url: 'https://github',
       },
     ],
     gitSiteUrl: 'https://github.com/petecarapetyan/fins-rocket-themes',
