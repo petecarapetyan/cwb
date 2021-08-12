@@ -28,12 +28,13 @@ way than you intended.
 */
 const setDisplayProperties = (roles: Roles) => {
   for (const role in roles) {
+      console.log(`SHOWING\n${JSON.stringify(role)}`)
       document.documentElement.style.setProperty(
-        `--show-if-${role}`,
+        `--display-if-${role}`,
         roles[role] ? "block" : "none"
       );
       document.documentElement.style.setProperty(
-        `--show-if-not-${role}`,
+        `--display-if-not-${role}`,
         roles[role] ? "none" : "block"
       );
   }

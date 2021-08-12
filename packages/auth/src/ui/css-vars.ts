@@ -13,4 +13,22 @@ export const cssVars = css`
   [if-not-user] {
     display: var(--display-if-not-user, block);
   }
+  [if-moderator] {
+    display: var(--display-if-moderator, none);
+  }
+  [if-not-moderator] {
+    display: var(--display-if-not-moderator, block);
+  }
+  [if-admin] {
+    display: var(--display-if-admin, none);
+  }
+  [if-not-admin] {
+    display: var(--display-if-not-admin, block);
+  }
+  [if-superadmin] {
+    display: var(--display-if-superadmin, none);
+  }
+  [if-not-superadmin] {
+    display: var(--display-if-not-superadmin, block);
+  }
 `;
