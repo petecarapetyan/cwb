@@ -29,3 +29,11 @@ In the above configuration, only the single pages need a back end connection. So
 - I ran out of gas before I got all the rollup stuff working properly
 
 So, for the moment, it's really a bunch of separate projects organized improperly under "packages"
+
+What caused the mono-repo effort to fail? Basically I cannot figure out how to run the rollup scripts required for each of the web component projects.
+
+As a result of this I have - temporarily - copypasted some code in multiple packages until I get the mono-repo working properly.
+
+Meanwhile I have to finish other deliverables.
+
+

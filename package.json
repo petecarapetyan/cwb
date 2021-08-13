@@ -22,13 +22,6 @@
   },
   "homepage": "https://github.com/petecarapetyan/wcfb#readme",
   "workspaces": [
-    "packages/admin",
-    "packages/auth",
-    "packages/buy",
-    "packages/cart",
-    "packages/functions",
-    "packages/media",
-    "packages/mpa",
-    "packages/upload"
+    "packages/*"
   ]
 }
