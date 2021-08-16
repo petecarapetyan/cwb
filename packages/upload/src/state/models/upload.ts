@@ -27,7 +27,7 @@ export default createModel({
     }
   },
   effects: (_store) => ({
-    async upload(file: File) {
+      async upload(file: File) {
       const name = underscore4space(`${new Date().getTime()}_${file.name}`)
       const ref = (await storageLoader).ref(`mediaUploaded/${name}`);
       if (file && file.name) {
@@ -48,7 +48,7 @@ export default createModel({
             _store.getDispatch().upload.message(`The file ${file.name} was uploaded at ${time}.`);                 
           }
         );
-        _store.getDispatch().upload.createRecord(name)
+        // _store.getDispatch().upload.createRecord(name) What happened to this??? Where did it go?
       }
     },
     

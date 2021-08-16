@@ -1,0 +1,51 @@
+rules_version = '2';
+service cloud.firestore {
+
+  
+  function userIsModerator(){
+    return request.auth.token.isModerator == true
+  }
+
+  function userIsRoomModerator(database, roomId){
+    return request.auth.uid in (get(/databases/$(database)/documents/rooms/$(roomId)).data.roomMods);
+  }
+
+  function documentFieldsCheckOut(requiredFields, optionalFields) {
+    let allFields = requiredFields.concat(optionalFields);
+    return request.resource.data.keys().hasAll(requiredFields) && request.resource.data.keys().hasOnly(allFields)
+  }
+
+  function editOnlyChangesFields(allowedFields) {
+    // HOW TO USE DEBUG
+    // return debug(request.resource.data.keys()).hasOnly(debug(allowedFields))
+    let affectedKeys = request.resource.data.diff(resource.data).affectedKeys();
+    return affectedKeys.hasOnly(allowedFields)
+  }
+
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if false;
+    }
+    match /readonly/{docId} {
+      allow read: if true;
+      allow write: if false;
+    }
+    match /users/{userId} {
+      allow write: if request.auth.uid == userId;
+    }
+    match /posts/{postId} {
+      allow read: if resource.data.visibility == "public" ||
+        (resource.data.authorId == request.auth.uid);
+      allow update: if (resource.data.authorId == request.auth.uid || 
+        userIsModerator()) && editOnlyChangesFields(["visibility", "content"])
+      allow create: if request.resource.data.authorId == request.auth.uid && 
+        documentFieldsCheckOut(["authorId", "visibility", "content", "headline"], ["photo", "tags", "location"])
+    }
+    match /rooms/{roomId} {
+      match /posts/{postId} {
+        allow update: if (resource.data.authorId == request.auth.uid) ||
+          userIsRoomModerator(database, roomId);
+      }
+    }
+  }
+}
